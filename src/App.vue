@@ -21,7 +21,7 @@ export default {
   },
   create: {
     isLogged() {
-      if (localStorage.getItem("@delc.token")) {
+      if (localStorage.getItem("@delc:token")) {
         return this.$store.commit("changeLogged", true);
       }
     },

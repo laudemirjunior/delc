@@ -4,7 +4,7 @@ export default createStore({
   state: {
     show: false,
     error: "",
-    logged: true,
+    logged: false,
   },
   mutations: {
     timerTost(state, payload) {
