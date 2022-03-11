@@ -64,7 +64,7 @@ export default {
         })
         .then((response) => {
           this.newUrl = response.data;
-          this.myUrls.splice(index);
+          this.myUrls.splice(index, 1);
           this.$store.commit("timerTost", "URL excluída com sucesso");
         })
         .catch(() => this.$store.commit("timerTost", "Erro ao excluir a URL"));
