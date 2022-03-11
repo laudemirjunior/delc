@@ -19,12 +19,10 @@ export default {
     HeaderComponent,
     TostComponent,
   },
-  create: {
-    isLogged() {
-      if (localStorage.getItem("@delc:token")) {
-        return this.$store.commit("changeLogged", true);
-      }
-    },
+  created() {
+    if (localStorage.getItem("@delc:token")) {
+      return this.$store.commit("changeLogged", true);
+    }
   },
 };
 </script>
