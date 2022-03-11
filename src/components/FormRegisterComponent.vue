@@ -1,5 +1,5 @@
 <template>
-  <form class="container">
+  <form class="container" v-on:submit.prevent="onSubmit">
     <h1>Cadastrar</h1>
     <input required Placeholder="Digite seu nome" v-model="user.name" />
     <input

@@ -1,5 +1,5 @@
 <template>
-  <form class="container">
+  <form class="container" v-on:submit.prevent="onSubmit">
     <h1 @click="cl">Entrar</h1>
     <i class="fa-thin fa-0"></i>
     <input
