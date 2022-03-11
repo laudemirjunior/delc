@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <form class="container">
     <h1 @click="cl">Entrar</h1>
     <i class="fa-thin fa-0"></i>
     <input
@@ -21,7 +21,7 @@
       color="light"
       @click="$router.push('/register')"
     />
-  </div>
+  </form>
 </template>
 <script>
 import ButtonComponent from "./ButtonComponent.vue";

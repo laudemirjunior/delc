@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <form class="container">
     <h1>Cadastrar</h1>
     <input required Placeholder="Digite seu nome" v-model="user.name" />
     <input
@@ -27,7 +27,7 @@
       color="light"
       @click="$router.push('/login')"
     />
-  </div>
+  </form>
 </template>
 <script>
 import ButtonComponent from "./ButtonComponent.vue";
@@ -53,7 +53,6 @@ export default {
       api
         .post("/register", this.user)
         .then(() => {
-          console.log(this.user);
           this.$router.push({ name: "login" });
         })
         .catch((error) => {
