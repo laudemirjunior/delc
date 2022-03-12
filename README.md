@@ -2,6 +2,8 @@
 
 &nbsp;
 
+[Apresentação do aplicativo](https://share.vidyard.com/watch/y2gf7M1UF4h1wvb5H5Lhf1?)
+
 # Front-End
 
 Deploy: [Deploy da delc no Vercel ](https://delc.vercel.app/)
